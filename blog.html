@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script
+      src="https://kit.fontawesome.com/02993d2be8.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumar+One&family=Lato:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <title>Sanctuary Helpers - Blog</title>
+  </head>
+  <body>
+    <!-- Nav -->
+    <nav class="nav-bar">
+      <div class="wrapper">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+      <!-- End of Nav Bar wrapper -->
+    </nav>
+    <header>
+      <div class="wrapper">
+        <!-- Another background image? -->
+        <h1>Blog</h1>
+      </div>
+    </header>
+    <section class="blog">
+      <div class="blog-image-container">
+        <img
+          src="./sanctuary-helpers-final-images/blog-post-image.jpg"
+          alt="A blue couch with white cusions"
+        />
+      </div>
+      <div class="wrapper">
+        <article class="blog-post">
+          <h2>Finding the Right Pieces For New Space</h2>
+          <p>Monday, October 5th, 2019 by Saron</p>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi,
+            rerum nulla! Tempora repellendus nam, laudantium doloremque ipsa
+            quaerat, facilis accusamus rerum similique nostrum asperiores non
+            assumenda reiciendis nemo in maxime ad omnis vel error. Adipisci
+            accusamus architecto porro sapiente nostrum impedit placeat?
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat
+            exercitationem doloribus sapiente, accusantium consequuntur
+            laudantium harum alias aut adipisci voluptate, id non laborum.
+            Commodi non, itaque soluta molestiae ipsum asperiores aspernatur
+            labore corporis veritatis molestias, excepturi harum accusantium
+            autem quos voluptatum totam fugiat. Tempora iste aliquid facere enim
+            ducimus quaerat.
+          </p>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt
+            sequi nemo, ratione rerum perspiciatis et reiciendis. Repudiandae
+            amet accusantium praesentium quod illo iure officia nobis. Quibusdam
+            dicta ut natus, perspiciatis recusandae sequi iusto, voluptates
+            omnis praesentium non excepturi doloremque ipsum quis vero.
+            Laboriosam, aspernatur. Suscipit sequi sapiente explicabo quia,
+            neque a? Earum tempore atque voluptas provident deleniti quas
+            incidunt quod illo suscipit eveniet rerum fugit maxime itaque,
+            optio, nobis autem.
+          </p>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore
+            eius, libero ex inventore, ipsam earum distinctio ab accusamus
+            dolorum eum eaque culpa voluptatem debitis nostrum molestias.
+            Dolores animi suscipit labore.
+          </p>
+        </article>
+      </div>
+      <!-- End of wrapper -->
+
+      <div class="sidebar">
+        <h3>Out Mission</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias aut
+          tempore, numquam consequuntur adipisci ratione sed?
+        </p>
+        <h3>Recent Posts</h3>
+        <ul>
+          <li>Lorem ipsum dolor sit.</li>
+          <li>Lorem ipsum dolor sit.</li>
+          <li>Lorem ipsum dolor sit.</li>
+          <li>Lorem ipsum dolor sit.</li>
+        </ul>
+      </div>
+    </section>
+    <!-- End of blog section -->
+    <section class="comments">
+      <h3>Comments:</h3>
+      <div class="comment-post">
+        <div class="comment-image-container">
+          <img
+            src="./sanctuary-helpers-final-images/comment-image.jpg"
+            alt="The display picture of the user Davin"
+          />
+        </div>
+        <div class="comment-text-container">
+          <p>Tuesday October 9th, 2019 By Davin</p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque
+            expedita voluptas commodi quas reiciendis explicabo. Dolore ex
+            libero optio nulla obcaecati sed sequi ipsam minima voluptatum
+            nesciunt ullam, est saepe eveniet expedita sunt dicta dolorum atque
+            voluptas mollitia debitis distinctio delectus? Id animi facere quos.
+          </p>
+        </div>
+      </div>
+      <!-- End of comment post -->
+      <div class="comment-post">
+        <div class="comment-image-container">
+          <img
+            src="./sanctuary-helpers-final-images/comment-image2.jpg"
+            alt="The display picture of the user Lisa"
+          />
+        </div>
+        <div class="comment-text-container">
+          <p>Wednesday October 10th, 2019 By Lisa</p>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos
+            perspiciatis voluptas quaerat eius nam quo voluptatem natus
+            quisquam.
+          </p>
+        </div>
+      </div>
+       <section class="comment-form">
+      <form action="submit">
+        <!-- Name input on form -->
+        <label for="name" class="sr-only">Name</label>
+        <input type="text" name="name" id="name" placeholder="Name" />
+        <!-- Email input on form -->
+        <label for="email-address" class="sr-only">Email Address</label>
+        <input
+          type="email"
+          name="email-address"
+          id="email-address"
+          placeholder="Email Address"
+        />
+        <!-- Message Box -->
+        <label for="message" class="sr-only">Comment</label>
+        <textarea
+          name="comment"
+          id="comment
+          cols="30"
+          rows="10"
+          placeholder="comment"
+        ></textarea>
+      <button type="submit">Post Comment</button>
+      </form>
+    </section>
+    <!-- End of form -->
+    </section>
+    <footer>
+      <p>Copyright &copy; 2019 HackerYou</p>
+    </footer>
+  </body>
+</html>
