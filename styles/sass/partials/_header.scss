@@ -1,0 +1,13 @@
+@use "./variables";
+
+header {
+  background: url(../sanctuary-helpers-final-images/header-home.jpg);
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.nav-bar ul {
+  display: flex;
+  justify-content: flex-end;
+}

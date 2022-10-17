@@ -252,3 +252,52 @@ template {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+.wrapper {
+  width: 90%;
+  margin: 0 auto;
+  max-width: 1260px;
+}
+
+html {
+  font-size: 125%;
+}
+
+ul {
+  list-style: none;
+  font-family: "Lato", sans-serif;
+  font-weight: bold;
+  font-size: 1rem;
+}
+ul li {
+  letter-spacing: 1.4px;
+  line-height: 29px;
+}
+ul li a {
+  text-decoration: none;
+  color: #151514;
+  text-transform: uppercase;
+  margin-right: 15px;
+}
+
+h1 {
+  margin: 0;
+  font-family: "Kumar One Outline", cursive;
+  line-height: 64px;
+}
+
+header {
+  background: url(../sanctuary-helpers-final-images/header-home.jpg);
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.nav-bar ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
