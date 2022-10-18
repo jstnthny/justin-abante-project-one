@@ -3,5 +3,16 @@
 .wrapper {
   width: 90%;
   margin: 0 auto; //m0-a emmet
-  max-width: 1260px;
+  max-width: 1500px;
+}
+
+.button {
+  font-family: variables.$mainFont;
+  font-size: 1rem;
+  line-height: 32px;
+  letter-spacing: 2px;
+  background-color: variables.$everGreen;
+  color: variables.$white;
+  text-decoration: none;
+  padding: 5px 10px;
 }

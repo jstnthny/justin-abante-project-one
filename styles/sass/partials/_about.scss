@@ -1,0 +1,25 @@
+@use "./variables";
+
+// About Section
+
+.about {
+  padding-top: 220px;
+}
+
+.about-text-container {
+  p {
+    width: 75%;
+  }
+}
+
+.about-image-container {
+  .box-shadow {
+    -webkit-box-shadow: -15px 14px 0px 1px variables.$brightYellow;
+    box-shadow: -15px 14px 0px 1px variables.$brightYellow;
+  }
+}
+
+.about-flex-container {
+  display: flex;
+  padding-bottom: 90px;
+}

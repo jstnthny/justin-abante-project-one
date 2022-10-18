@@ -2,12 +2,31 @@
 
 header {
   background: url(../sanctuary-helpers-final-images/header-home.jpg);
-  background-position: right;
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.nav-bar h1 {
+  position: relative;
+  left: 120px;
+  top: 100px;
 }
 
 .nav-bar ul {
   display: flex;
   justify-content: flex-end;
+}
+
+.heading-block {
+  display: block;
+}
+
+.header-image-container {
+  position: relative;
+  top: 185px;
+  width: 55%;
+  img {
+    width: 100%;
+  }
 }
