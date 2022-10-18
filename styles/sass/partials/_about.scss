@@ -23,3 +23,13 @@
   display: flex;
   padding-bottom: 90px;
 }
+
+.about-image-gallery {
+  background: variables.$ice;
+  padding: 80px 0;
+  .wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+  }
+}

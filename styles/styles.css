@@ -369,3 +369,17 @@ header {
   display: flex;
   padding-bottom: 90px;
 }
+
+.about-image-gallery {
+  background: #e0fddf;
+  padding: 80px 0;
+}
+.about-image-gallery .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 30px;
+}
