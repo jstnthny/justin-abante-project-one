@@ -3,9 +3,14 @@
 @use "./partials/global";
 @use "./partials/typography";
 @use "./partials/header";
-@use "./partials/about";
-@use "./partials/features";
-@use "./partials/locations";
-@use "./partials/styleSection";
+// Index specific partials
+@use "./partials/index/about";
+@use "./partials/index/features";
+@use "./partials/index/locations";
+@use "./partials/index/styleSection";
+// End of Index specfic Partials
+// Blog partials
+@use "./partials/blog/blog";
+// End of blog partials
 @use "./partials/footer";
 @use "./partials/mediaQueries";

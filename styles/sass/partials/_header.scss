@@ -1,10 +1,18 @@
 @use "./variables";
 
-header {
+header.index {
   background: url(../sanctuary-helpers-final-images/header-home.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+header.blog {
+  background: url(../sanctuary-helpers-final-images/blog-image.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 75vh;
 }
 
 .nav-bar h1 {

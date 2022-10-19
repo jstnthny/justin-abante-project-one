@@ -321,11 +321,19 @@ p {
   letter-spacing: 2px;
 }
 
-header {
+header.index {
   background: url(../sanctuary-helpers-final-images/header-home.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+header.blog {
+  background: url(../sanctuary-helpers-final-images/blog-image.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 75vh;
 }
 
 .nav-bar h1 {
@@ -484,6 +492,15 @@ header {
   margin: 0 auto;
   text-align: center;
   display: block;
+}
+
+.blog-image-container {
+  position: relative;
+  bottom: 210px;
+}
+.blog-image-container .box-shadow {
+  -webkit-box-shadow: 19px 20px 0px 1px #f8fb05;
+  box-shadow: 19px 20px 0px 1px #f8fb05;
 }
 
 footer {

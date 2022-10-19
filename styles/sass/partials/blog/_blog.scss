@@ -1,0 +1,10 @@
+@use "../variables";
+
+.blog-image-container {
+  position: relative;
+  bottom: 210px;
+  .box-shadow {
+    -webkit-box-shadow: 19px 20px 0px 1px variables.$brightYellow;
+    box-shadow: 19px 20px 0px 1px variables.$brightYellow;
+  }
+}
