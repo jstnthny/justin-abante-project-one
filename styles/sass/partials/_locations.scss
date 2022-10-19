@@ -3,3 +3,45 @@
 .groups-and-locations {
   background: variables.$ice;
 }
+
+.groups-and-locations {
+  .flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  img {
+    width: 100%;
+  }
+}
+
+.groups-and-locations-image-container,
+.groups-and-locations-text-container {
+  width: 42%;
+}
+
+.groups-and-locations-image-container:nth-child(1) {
+  position: relative;
+  bottom: 50px;
+  .box-shadow {
+    -webkit-box-shadow: 19px 20px 0px 1px variables.$brightYellow;
+    box-shadow: 19px 20px 0px 1px variables.$brightYellow;
+  }
+}
+
+.groups-and-locations-image-container:nth-child(4) {
+  position: relative;
+  top: 60px;
+  .box-shadow {
+    -webkit-box-shadow: -18px 18px 0px 1px variables.$brightYellow;
+    box-shadow: -18px 18px 0px 1px variables.$brightYellow;
+  }
+}
+
+.groups-and-locations-text-container {
+  position: relative;
+  top: 100px;
+}
+.groups-and-locations-text-container:nth-child(3) {
+  text-align: right;
+}

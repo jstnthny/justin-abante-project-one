@@ -306,6 +306,7 @@ h3 {
   font-size: 1.65rem;
   line-height: 58px;
   letter-spacing: 2.1px;
+  text-transform: uppercase;
 }
 
 p {
@@ -420,4 +421,50 @@ header {
 
 .groups-and-locations {
   background: #e0fddf;
+}
+
+.groups-and-locations .flex-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.groups-and-locations img {
+  width: 100%;
+}
+
+.groups-and-locations-image-container,
+.groups-and-locations-text-container {
+  width: 42%;
+}
+
+.groups-and-locations-image-container:nth-child(1) {
+  position: relative;
+  bottom: 50px;
+}
+.groups-and-locations-image-container:nth-child(1) .box-shadow {
+  -webkit-box-shadow: 19px 20px 0px 1px #f8fb05;
+  box-shadow: 19px 20px 0px 1px #f8fb05;
+}
+
+.groups-and-locations-image-container:nth-child(4) {
+  position: relative;
+  top: 60px;
+}
+.groups-and-locations-image-container:nth-child(4) .box-shadow {
+  -webkit-box-shadow: -18px 18px 0px 1px #f8fb05;
+  box-shadow: -18px 18px 0px 1px #f8fb05;
+}
+
+.groups-and-locations-text-container {
+  position: relative;
+  top: 100px;
+}
+
+.groups-and-locations-text-container:nth-child(3) {
+  text-align: right;
 }
