@@ -1,0 +1,45 @@
+@use "./variables";
+
+@media (max-width: 1600px) {
+  .groups-and-locations .flex-container {
+    padding-bottom: 150px;
+  }
+}
+
+// Smaller Desktop view
+
+// Tablet View
+@media (max-width: 800px) {
+  /* all of our styles for TABLET devices will go within this breakpoint */
+
+  .header-image-container {
+    position: relative;
+    top: 20px;
+  }
+
+  //   About Section
+
+  .about {
+    padding-top: 50px;
+  }
+
+  .about-flex-container {
+    justify-content: center;
+  }
+
+  .about-image-container.feature-photo {
+    margin-top: 30px;
+  }
+
+  //   Groups & Locations
+
+  .groups-and-locations .flex-container {
+    padding-bottom: 170px;
+  }
+
+  //   Style Section
+
+  .style-container a {
+    width: 100%;
+  }
+}

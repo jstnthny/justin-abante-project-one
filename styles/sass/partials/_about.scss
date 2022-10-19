@@ -22,6 +22,7 @@
 .about-flex-container {
   display: flex;
   padding-bottom: 90px;
+  flex-wrap: wrap;
 }
 
 .about-image-gallery {
@@ -30,6 +31,7 @@
   .wrapper {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     gap: 30px;
   }
 }

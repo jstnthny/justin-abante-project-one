@@ -270,6 +270,10 @@ template {
   padding: 5px 10px;
 }
 
+section {
+  overflow-x: clip;
+}
+
 html {
   font-size: 125%;
 }
@@ -298,6 +302,7 @@ h1 {
   font-family: "Kumar One Outline", cursive;
   line-height: 64px;
   font-size: 3.4rem;
+  text-transform: uppercase;
 }
 
 h2,
@@ -324,9 +329,7 @@ header {
 }
 
 .nav-bar h1 {
-  position: relative;
-  left: 120px;
-  top: 100px;
+  margin-top: 50px;
 }
 
 .nav-bar ul {
@@ -369,6 +372,8 @@ header {
   display: -ms-flexbox;
   display: flex;
   padding-bottom: 90px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .about-image-gallery {
@@ -382,6 +387,8 @@ header {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   gap: 30px;
 }
 
@@ -487,4 +494,34 @@ footer {
 footer p {
   margin: 0;
   text-align: center;
+}
+
+@media (max-width: 1600px) {
+  .groups-and-locations .flex-container {
+    padding-bottom: 150px;
+  }
+}
+@media (max-width: 800px) {
+  /* all of our styles for TABLET devices will go within this breakpoint */
+  .header-image-container {
+    position: relative;
+    top: 20px;
+  }
+  .about {
+    padding-top: 50px;
+  }
+  .about-flex-container {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .about-image-container.feature-photo {
+    margin-top: 30px;
+  }
+  .groups-and-locations .flex-container {
+    padding-bottom: 170px;
+  }
+  .style-container a {
+    width: 100%;
+  }
 }
