@@ -1,0 +1,14 @@
+@use "./variables";
+
+.style-container {
+  margin-top: 200px;
+  h2 {
+    text-align: center;
+  }
+  a {
+    width: 15%;
+    margin: 0 auto;
+    text-align: center;
+    display: block;
+  }
+}

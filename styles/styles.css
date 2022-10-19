@@ -419,10 +419,6 @@ header {
   margin-top: 0;
 }
 
-.groups-and-locations {
-  background: #e0fddf;
-}
-
 .groups-and-locations .flex-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -432,6 +428,7 @@ header {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  background: #e0fddf;
 }
 .groups-and-locations img {
   width: 100%;
@@ -467,4 +464,27 @@ header {
 
 .groups-and-locations-text-container:nth-child(3) {
   text-align: right;
+}
+
+.style-container {
+  margin-top: 200px;
+}
+.style-container h2 {
+  text-align: center;
+}
+.style-container a {
+  width: 15%;
+  margin: 0 auto;
+  text-align: center;
+  display: block;
+}
+
+footer {
+  background: #151514;
+  color: #f5f5f5;
+  margin-top: 250px;
+}
+footer p {
+  margin: 0;
+  text-align: center;
 }
