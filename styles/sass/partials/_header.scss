@@ -13,6 +13,10 @@ header.blog {
   background-repeat: no-repeat;
   background-size: cover;
   height: 75vh;
+  .nav-bar .wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .nav-bar h1 {

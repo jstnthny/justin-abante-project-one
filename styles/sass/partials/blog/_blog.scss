@@ -1,8 +1,46 @@
 @use "../variables";
 
-.blog-image-container {
+.blog-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: variables.$ice;
+}
+
+.blog-post {
+  background-color: variables.$white;
+  width: 60%;
+  -webkit-box-shadow: 19px 20px 0px 1px variables.$brightYellow;
+  box-shadow: 19px 20px 0px 1px variables.$brightYellow;
   position: relative;
-  bottom: 210px;
+  bottom: 185px;
+}
+
+.sidebar {
+  width: 25%;
+  background-color: variables.$brightYellow;
+  -webkit-box-shadow: -15px 14px 0px 1px #f8fb05;
+  box-shadow: -15px 14px 0px 1px #f8fb05;
+  height: fit-content;
+  position: relative;
+  top: 140px;
+  .sidebar-image-container {
+    width: 100%;
+    img {
+      width: 100%;
+    }
+  }
+  ul {
+    list-style-type: disc;
+    padding-top: 0;
+  }
+}
+
+.blog-image-container {
+  width: 100%;
+  img {
+    width: 100%;
+  }
   .box-shadow {
     -webkit-box-shadow: 19px 20px 0px 1px variables.$brightYellow;
     box-shadow: 19px 20px 0px 1px variables.$brightYellow;
