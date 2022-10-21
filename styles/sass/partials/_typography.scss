@@ -54,3 +54,8 @@ p {
   line-height: 32px;
   letter-spacing: 2px;
 }
+
+input {
+  font-family: variables.$secondaryFont;
+  color: variables.$black;
+}

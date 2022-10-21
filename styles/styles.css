@@ -259,7 +259,8 @@ template {
   max-width: 1500px;
 }
 
-.button {
+.button,
+button {
   font-family: "Kumar One", cursive;
   font-size: 1rem;
   line-height: 32px;
@@ -325,6 +326,11 @@ p {
   font-size: 1rem;
   line-height: 32px;
   letter-spacing: 2px;
+}
+
+input {
+  font-family: "Lato", sans-serif;
+  color: #151514;
 }
 
 header.index {
@@ -511,6 +517,13 @@ header.blog h2 {
   display: block;
 }
 
+.sanctuary-blog {
+  background-color: #e0fddf;
+}
+.sanctuary-blog footer {
+  margin: 0;
+}
+
 .blog-section {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -567,9 +580,105 @@ header.blog h2 {
 
 .comments {
   background-color: #e0fddf;
+  width: 60%;
 }
 .comments h3 {
   margin: 0;
+}
+
+.blog-wrapper {
+  width: 68%;
+  margin: 0 auto;
+  max-width: 1500px;
+}
+
+.comment-post {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 0 100px 0;
+}
+.comment-post .comment-text-container {
+  margin-left: 30px;
+}
+.comment-post .comment-text-container .comment-date {
+  margin: 0;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.comment-post .comment-text-container p {
+  margin: 0;
+}
+
+.comment-form .top-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.comment-form .top-form input {
+  width: 48%;
+  border: 0;
+  border-bottom: 2px solid #065635;
+  padding: 30px;
+  background-color: #e0fddf;
+}
+.comment-form .top-form input::-webkit-input-placeholder {
+  text-transform: uppercase;
+  color: #151514;
+}
+.comment-form .top-form input::-moz-placeholder {
+  text-transform: uppercase;
+  color: #151514;
+}
+.comment-form .top-form input:-ms-input-placeholder {
+  text-transform: uppercase;
+  color: #151514;
+}
+.comment-form .top-form input::-ms-input-placeholder {
+  text-transform: uppercase;
+  color: #151514;
+}
+.comment-form .top-form input::placeholder {
+  text-transform: uppercase;
+  color: #151514;
+}
+.comment-form textarea {
+  margin-top: 40px;
+  border: 2px solid #065635;
+  padding: 30px;
+  resize: none;
+  width: 100%;
+  background-color: #e0fddf;
+}
+.comment-form textarea::-webkit-input-placeholder {
+  text-transform: uppercase;
+  color: #151514;
+}
+.comment-form textarea::-moz-placeholder {
+  text-transform: uppercase;
+  color: #151514;
+}
+.comment-form textarea:-ms-input-placeholder {
+  text-transform: uppercase;
+  color: #151514;
+}
+.comment-form textarea::-ms-input-placeholder {
+  text-transform: uppercase;
+  color: #151514;
+}
+.comment-form textarea::placeholder {
+  text-transform: uppercase;
+  color: #151514;
+}
+.comment-form button {
+  background-color: #065635;
+  border: none;
+  width: 100%;
+  margin-top: 40px;
+  text-transform: uppercase;
 }
 
 footer {

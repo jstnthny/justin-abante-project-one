@@ -1,5 +1,12 @@
 @use "../variables";
 
+.sanctuary-blog {
+  background-color: variables.$ice;
+  footer {
+    margin: 0;
+  }
+}
+
 .blog-section {
   display: flex;
   flex-wrap: wrap;
@@ -49,7 +56,69 @@
 
 .comments {
   background-color: variables.$ice;
+  width: 60%;
   h3 {
     margin: 0;
+  }
+}
+
+.blog-wrapper {
+  width: 68%;
+  margin: 0 auto;
+  max-width: 1500px;
+}
+
+// Comment section
+
+.comment-post {
+  display: flex;
+  margin: 0 0 100px 0;
+  .comment-text-container {
+    margin-left: 30px;
+    .comment-date {
+      margin: 0;
+      text-transform: uppercase;
+      font-weight: bold;
+    }
+    p {
+      margin: 0;
+    }
+  }
+}
+
+.comment-form {
+  .top-form {
+    display: flex;
+    justify-content: space-between;
+    input {
+      width: 48%;
+      border: 0;
+      border-bottom: 2px solid variables.$everGreen;
+      padding: 30px;
+      background-color: variables.$ice;
+      &::placeholder {
+        text-transform: uppercase;
+        color: variables.$black;
+      }
+    }
+  }
+  textarea {
+    margin-top: 40px;
+    border: 2px solid variables.$everGreen;
+    padding: 30px;
+    resize: none;
+    width: 100%;
+    background-color: variables.$ice;
+    &::placeholder {
+      text-transform: uppercase;
+      color: variables.$black;
+    }
+  }
+  button {
+    background-color: variables.$everGreen;
+    border: none;
+    width: 100%;
+    margin-top: 40px;
+    text-transform: uppercase;
   }
 }

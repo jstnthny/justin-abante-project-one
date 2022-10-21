@@ -6,7 +6,8 @@
   max-width: 1500px;
 }
 
-.button {
+.button,
+button {
   font-family: variables.$mainFont;
   font-size: 1rem;
   line-height: 32px;
