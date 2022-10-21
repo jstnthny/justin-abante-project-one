@@ -1,0 +1,51 @@
+@use "../variables";
+
+.contact-form {
+  background-color: variables.$ice;
+  padding-bottom: 50px;
+  .wrapper {
+    display: flex;
+    justify-content: space-between;
+    form {
+      width: 70%;
+      position: relative;
+      bottom: 190px;
+      padding: 30px;
+      background-color: #fff;
+      -webkit-box-shadow: 19px 20px 0px 1px variables.$brightYellow;
+      box-shadow: 19px 20px 0px 1px variables.$brightYellow;
+    }
+    .contact-info {
+      width: 20%;
+    }
+  }
+}
+
+.contact-info {
+  ul {
+    display: flex;
+    color: variables.$everGreen;
+    padding: 15% 0 0 0;
+  }
+  .address {
+    p {
+      margin: 0;
+    }
+  }
+}
+
+.contact-top {
+  display: flex;
+  justify-content: space-between;
+  input {
+    width: 48%;
+  }
+}
+button {
+  width: 100%;
+  margin-top: 50px;
+}
+
+footer.contact-footer {
+  margin: 0;
+}

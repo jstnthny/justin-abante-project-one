@@ -18,7 +18,7 @@
     <title>Sanctuary Helpers - Contact</title>
   </head>
   <body>
-    <header>
+    <header class="contact">
       <!-- Nav -->
       <nav class="nav-bar">
         <div class="wrapper">
@@ -33,51 +33,60 @@
           </ul>
         </div>
         <!-- End of Nav Bar wrapper -->
+        <div class="wrapper">
+          <h1>Get In Touch</h1>
+        </div>
       </nav>
       <!-- background image? -->
-      <h1>Get In Touch</h1>
     </header>
     <section class="contact-form">
-      <form action="submit">
-        <!-- Name input on form -->
-        <label for="name" class="sr-only">Name</label>
-        <input type="text" name="name" id="name" placeholder="Name" />
-        <!-- Email input on form -->
-        <label for="email-address" class="sr-only">Email Address</label>
-        <input
-          type="email"
-          name="email-address"
-          id="email-address"
-          placeholder="Email Address"
-        />
-        <!-- Message Box -->
-        <label for="message" class="sr-only">Message</label>
-        <textarea
-          name="message"
-          id="message"
-          cols="30"
-          rows="10"
-          placeholder="Message"
-        ></textarea>
-        <button type="submit">Submit</button>
-      </form>
-      <div class="contact-info">
-        <ul>
-          <li><i class="fa-brands fa-facebook-f"></i></li>
-          <li><i class="fa-brands fa-instagram"></i></li>
-          <li><i class="fa-brands fa-twitter"></i></li>
-          <li><i class="fa-brands fa-whatsapp"></i></li>
-        </ul>
-        <p>info@email.com</p>
-        <p>123 - 456 - 7890</p>
-        <p>123 Queen Street West,</p>
-        <p>Unit 10</p>
-        <p>Toronto, Ontario</p>
-        <p>M5V2D5</p>
+      <div class="wrapper">
+        <form action="submit">
+          <div class="contact-top">
+            <!-- Name input on form -->
+            <label for="name" class="sr-only">Name</label>
+            <input type="text" name="name" id="name" placeholder="Name" />
+            <!-- Email input on form -->
+            <label for="email-address" class="sr-only">Email Address</label>
+            <input
+              type="email"
+              name="email-address"
+              id="email-address"
+              placeholder="Email Address"
+            />
+          </div>
+
+          <!-- Message Box -->
+          <label for="message" class="sr-only">Message</label>
+          <textarea
+            name="message"
+            id="message"
+            cols="30"
+            rows="10"
+            placeholder="Message"
+          ></textarea>
+          <button type="submit">Submit</button>
+        </form>
+        <div class="contact-info">
+          <ul>
+            <li><i class="fa-brands fa-facebook-f"></i></li>
+            <li><i class="fa-brands fa-instagram"></i></li>
+            <li><i class="fa-brands fa-twitter"></i></li>
+            <li><i class="fa-brands fa-whatsapp"></i></li>
+          </ul>
+          <p>info@email.com</p>
+          <div class="address">
+            <p>123 - 456 - 7890</p>
+            <p>123 Queen Street West,</p>
+            <p>Unit 10</p>
+            <p>Toronto, Ontario</p>
+            <p>M5V2D5</p>
+          </div>
+        </div>
       </div>
     </section>
     <!-- End of form -->
-    <footer>
+    <footer class="contact-footer">
       <p>Copyright &copy; 2019 HackerYou</p>
     </footer>
   </body>

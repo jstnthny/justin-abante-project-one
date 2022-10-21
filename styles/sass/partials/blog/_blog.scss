@@ -2,9 +2,7 @@
 
 .sanctuary-blog {
   background-color: variables.$ice;
-  footer {
-    margin: 0;
-  }
+  padding-bottom: 150px;
 }
 
 .blog-section {
@@ -91,29 +89,13 @@
     display: flex;
     justify-content: space-between;
     input {
-      width: 48%;
-      border: 0;
-      border-bottom: 2px solid variables.$everGreen;
-      padding: 30px;
       background-color: variables.$ice;
-      &::placeholder {
-        text-transform: uppercase;
-        color: variables.$black;
-      }
+    }
+    textarea {
+      background-color: variables.$ice;
     }
   }
-  textarea {
-    margin-top: 40px;
-    border: 2px solid variables.$everGreen;
-    padding: 30px;
-    resize: none;
-    width: 100%;
-    background-color: variables.$ice;
-    &::placeholder {
-      text-transform: uppercase;
-      color: variables.$black;
-    }
-  }
+
   button {
     background-color: variables.$everGreen;
     border: none;
@@ -121,4 +103,8 @@
     margin-top: 40px;
     text-transform: uppercase;
   }
+}
+
+.blog-footer {
+  margin: 0;
 }

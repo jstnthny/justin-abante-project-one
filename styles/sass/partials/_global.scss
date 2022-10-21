@@ -21,3 +21,27 @@ button {
 section {
   overflow-x: clip;
 }
+
+input {
+  width: 48%;
+  border: 0;
+  border-bottom: 2px solid variables.$everGreen;
+  padding: 30px;
+  &::placeholder {
+    text-transform: uppercase;
+    color: variables.$black;
+  }
+}
+
+textarea {
+  margin-top: 40px;
+  border: 2px solid variables.$everGreen;
+  padding: 30px;
+  resize: none;
+  width: 100%;
+
+  &::placeholder {
+    text-transform: uppercase;
+    color: variables.$black;
+  }
+}
