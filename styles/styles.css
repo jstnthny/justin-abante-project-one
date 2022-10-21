@@ -349,6 +349,9 @@ header.blog .nav-bar .wrapper {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
+header.blog h2 {
+  margin-bottom: 150px;
+}
 
 .nav-bar h1 {
   margin-top: 50px;
@@ -560,6 +563,13 @@ header.blog .nav-bar .wrapper {
 .blog-image-container .box-shadow {
   -webkit-box-shadow: 19px 20px 0px 1px #f8fb05;
   box-shadow: 19px 20px 0px 1px #f8fb05;
+}
+
+.comments {
+  background-color: #e0fddf;
+}
+.comments h3 {
+  margin: 0;
 }
 
 footer {

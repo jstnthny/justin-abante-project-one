@@ -46,3 +46,10 @@
     box-shadow: 19px 20px 0px 1px variables.$brightYellow;
   }
 }
+
+.comments {
+  background-color: variables.$ice;
+  h3 {
+    margin: 0;
+  }
+}
