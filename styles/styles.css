@@ -394,6 +394,9 @@ header.index {
   background-repeat: no-repeat;
   background-size: cover;
 }
+header.index .nav-bar .wrapper ul li:first-child {
+  border-bottom: #f8fb05 3px solid;
+}
 
 header.blog {
   background: url(../sanctuary-helpers-final-images/blog-image.jpg);
@@ -409,6 +412,9 @@ header.blog .nav-bar .wrapper {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+header.blog .nav-bar .wrapper ul li:nth-child(3) {
+  border-bottom: #f8fb05 3px solid;
 }
 header.blog h2 {
   margin-bottom: 150px;
@@ -429,6 +435,9 @@ header.contact .nav-bar .wrapper {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
+header.contact .nav-bar .wrapper ul li:nth-child(4) {
+  border-bottom: #f8fb05 3px solid;
+}
 header.contact h1 {
   margin-top: 100px;
 }
@@ -446,6 +455,9 @@ header.contact h1 {
           justify-content: flex-end;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
 }
 
 .heading-block {
@@ -613,8 +625,9 @@ header.contact h1 {
 .blog-post {
   background-color: #f5f5f5;
   width: 60%;
-  -webkit-box-shadow: 19px 20px 0px 1px #f8fb05;
-  box-shadow: 19px 20px 0px 1px #f8fb05;
+  -webkit-box-shadow: 20px 23px 0px -14px #f8fb05;
+  box-shadow: 20px 23px 0px -14x #f8fb05;
+  padding: 0 14px;
   position: relative;
   bottom: 185px;
 }
@@ -787,11 +800,22 @@ footer p {
     width: 90%;
   }
 }
-@media (max-width: 800px) {
+@media (max-width: 850px) {
   /* all of our styles for TABLET devices will go within this breakpoint */
   .header-image-container {
-    position: relative;
-    top: 20px;
+    position: static;
+  }
+  .features .wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .features .wrapper .feature-container {
+    width: 100%;
   }
   .about {
     padding-top: 50px;
@@ -804,8 +828,59 @@ footer p {
   .about-image-container.feature-photo {
     margin-top: 30px;
   }
+  .about-text-container {
+    text-align: center;
+  }
+  .about-text-container p {
+    width: 100%;
+  }
   .groups-and-locations .flex-container {
     padding-bottom: 170px;
+  }
+  .groups-and-locations-image-container:nth-child(1) {
+    position: static;
+  }
+  .groups-and-locations-image-container:nth-child(4) {
+    position: static;
+  }
+  .groups-and-locations-text-container {
+    position: static;
+    margin: 20px 0;
+  }
+  .groups-and-locations .flex-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-line-pack: center;
+        align-content: center;
+  }
+  .groups-and-locations-image-container:nth-child(1) .box-shadow {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    margin-top: 50px;
+  }
+  .groups-and-locations-text-container:nth-child(3) {
+    text-align: center;
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+  }
+  .groups-and-locations-image-container:nth-child(4) .box-shadow {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  .groups-and-locations-image-container,
+.groups-and-locations-text-container {
+    width: 90%;
+    text-align: center;
+    margin: 20px;
+  }
+  .groups-and-locations .flex-container {
+    padding-bottom: 15px;
+  }
+  .style-container {
+    margin-top: 0;
   }
   .style-container a {
     width: 100%;
@@ -814,6 +889,8 @@ footer p {
     width: 100%;
     position: static;
     padding-top: 100px;
+    -webkit-box-shadow: none;
+            box-shadow: none;
   }
   .blog-image-container {
     width: 75%;
@@ -822,8 +899,10 @@ footer p {
   .sidebar {
     position: static;
     width: 75%;
-    margin: 0 auto;
+    margin: 40px auto;
     text-align: center;
+    -webkit-box-shadow: none;
+            box-shadow: none;
   }
   .sidebar .sidebar-image-container {
     width: 65%;
@@ -863,5 +942,17 @@ footer p {
   .contact-form .wrapper .contact-info {
     width: 100%;
     text-align: center;
+  }
+}
+@media (max-width: 550px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+  h2,
+h3 {
+    font-size: 1.4rem;
+  }
+  footer {
+    margin-top: 100px;
   }
 }

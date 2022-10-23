@@ -9,6 +9,8 @@
 // Smaller Desktop view
 
 @media (max-width: 1200px) {
+  // Home Page
+
   // BLOG PAGE
 
   .comments {
@@ -17,15 +19,24 @@
 }
 
 // Tablet View
-@media (max-width: 800px) {
+@media (max-width: 850px) {
   /* all of our styles for TABLET devices will go within this breakpoint */
 
   .header-image-container {
-    position: relative;
-    top: 20px;
+    position: static;
   }
 
-  //   About Section
+  // Home page
+
+  .features .wrapper {
+    flex-direction: column;
+    align-items: center;
+    .feature-container {
+      width: 100%;
+    }
+  }
+
+  //   About Section (Home page)
 
   .about {
     padding-top: 50px;
@@ -39,10 +50,66 @@
     margin-top: 30px;
   }
 
-  //   Groups & Locations
+  .about-text-container {
+    text-align: center;
+    p {
+      width: 100%;
+    }
+  }
+
+  //   Groups & Locations (Home page)
 
   .groups-and-locations .flex-container {
     padding-bottom: 170px;
+  }
+
+  .groups-and-locations-image-container:nth-child(1) {
+    position: static;
+  }
+
+  .groups-and-locations-image-container:nth-child(4) {
+    position: static;
+  }
+
+  .groups-and-locations-text-container {
+    position: static;
+    margin: 20px 0;
+  }
+
+  // Groups & Locations (Home Page)
+
+  .groups-and-locations .flex-container {
+    flex-direction: column;
+    align-content: center;
+  }
+
+  .groups-and-locations-image-container:nth-child(1) .box-shadow {
+    box-shadow: none;
+    margin-top: 50px;
+  }
+
+  .groups-and-locations-text-container:nth-child(3) {
+    text-align: center;
+    order: 3;
+  }
+
+  .groups-and-locations-image-container:nth-child(4) .box-shadow {
+    box-shadow: none;
+  }
+
+  .groups-and-locations-image-container,
+  .groups-and-locations-text-container {
+    width: 90%;
+    text-align: center;
+    margin: 20px;
+  }
+
+  .groups-and-locations .flex-container {
+    padding-bottom: 15px;
+  }
+
+  .style-container {
+    margin-top: 0;
   }
 
   //   Style Section
@@ -51,12 +118,15 @@
     width: 100%;
   }
 
+  // END OF HOME PAGE
+
   // BLOG PAGE
 
   .blog-post {
     width: 100%;
     position: static;
     padding-top: 100px;
+    box-shadow: none;
   }
 
   .blog-image-container {
@@ -67,8 +137,9 @@
   .sidebar {
     position: static;
     width: 75%;
-    margin: 0 auto;
+    margin: 40px auto;
     text-align: center;
+    box-shadow: none;
     .sidebar-image-container {
       width: 65%;
       margin: 0 auto;
@@ -82,6 +153,9 @@
       width: 100%;
     }
   }
+
+  // End of blog Page
+
   // Contact Page
   .contact-form {
     padding-top: 50px;
@@ -109,6 +183,24 @@
 }
 
 // Mobile View
-@media (max-width: 500px) {
-  //
+@media (max-width: 550px) {
+  // Typography
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  h2,
+  h3 {
+    font-size: 1.4rem;
+  }
+
+  //Nav bar
+
+  // Home page
+
+  // FOOTER
+
+  footer {
+    margin-top: 100px;
+  }
 }

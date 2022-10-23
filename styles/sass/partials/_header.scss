@@ -5,6 +5,9 @@ header.index {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  .nav-bar .wrapper ul li:first-child {
+    border-bottom: variables.$brightYellow 3px solid;
+  }
 }
 
 header.blog {
@@ -16,6 +19,9 @@ header.blog {
   .nav-bar .wrapper {
     display: flex;
     justify-content: space-between;
+    ul li:nth-child(3) {
+      border-bottom: variables.$brightYellow 3px solid;
+    }
   }
   h2 {
     margin-bottom: 150px;
@@ -31,6 +37,9 @@ header.contact {
   .nav-bar .wrapper {
     display: flex;
     justify-content: space-between;
+    ul li:nth-child(4) {
+      border-bottom: variables.$brightYellow 3px solid;
+    }
   }
   h1 {
     margin-top: 100px;
@@ -45,6 +54,7 @@ header.contact {
   display: flex;
   justify-content: flex-end;
   flex-wrap: wrap;
+  height: fit-content;
 }
 
 .heading-block {

@@ -15,8 +15,11 @@
 .blog-post {
   background-color: variables.$white;
   width: 60%;
-  -webkit-box-shadow: 19px 20px 0px 1px variables.$brightYellow;
-  box-shadow: 19px 20px 0px 1px variables.$brightYellow;
+  // -webkit-box-shadow: 8px 10px 0px 1px variables.$brightYellow;
+  // box-shadow: 8px 10px 0px 1px variables.$brightYellow;
+  -webkit-box-shadow: 20px 23px 0px -14px variables.$brightYellow;
+  box-shadow: 20px 23px 0px -14x variables.$brightYellow;
+  padding: 0 14px;
   position: relative;
   bottom: 185px;
 }
