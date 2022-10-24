@@ -946,11 +946,38 @@ footer p {
 }
 @media (max-width: 550px) {
   h1 {
-    font-size: 2.5rem;
+    font-size: 2rem;
+  }
+  ul {
+    font-size: 0.6rem;
   }
   h2,
 h3 {
     font-size: 1.4rem;
+  }
+  .comment-form .top-form {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .comment-form .top-form input {
+    width: 100%;
+  }
+  .contact-top {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .contact-top input {
+    width: 100%;
   }
   footer {
     margin-top: 100px;
