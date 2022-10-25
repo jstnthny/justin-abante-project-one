@@ -45,3 +45,17 @@ textarea {
     color: variables.$black;
   }
 }
+
+.hamburger-flex-container {
+  display: block;
+  position: absolute;
+  justify-content: flex-end;
+  padding: 10px 0 0 0;
+
+  .hamburger-menu {
+    text-align: right;
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+  }
+}

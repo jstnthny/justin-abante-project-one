@@ -94,9 +94,6 @@
     input {
       background-color: variables.$ice;
     }
-    textarea {
-      background-color: variables.$ice;
-    }
   }
 
   button {
@@ -105,6 +102,9 @@
     width: 100%;
     margin-top: 40px;
     text-transform: uppercase;
+  }
+  textarea {
+    background-color: variables.$ice;
   }
 }
 

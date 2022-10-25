@@ -253,6 +253,22 @@ template {
   overflow: hidden;
 }
 
+.skipLink {
+  position: absolute;
+  left: -1000px;
+  z-index: 10;
+  background: #fff;
+  color: black;
+  font-size: 1rem;
+  padding: 10px 0;
+}
+
+.skip-link:focus {
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
 .wrapper {
   width: 90%;
   margin: 0 auto;
@@ -330,6 +346,21 @@ textarea::placeholder {
   color: #151514;
 }
 
+.hamburger-flex-container {
+  display: block;
+  position: absolute;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding: 10px 0 0 0;
+}
+.hamburger-flex-container .hamburger-menu {
+  text-align: right;
+  font-size: 30px;
+  cursor: pointer;
+  display: none;
+}
+
 html {
   font-size: 125%;
 }
@@ -345,7 +376,7 @@ ul {
 ul li {
   letter-spacing: 1.4px;
   line-height: 29px;
-  margin-right: 25px;
+  margin-right: 60px;
 }
 ul li a {
   text-decoration: none;
@@ -477,13 +508,21 @@ header.contact h1 {
   padding-top: 220px;
 }
 
-.about-text-container p {
+.about-text-container {
   width: 75%;
+}
+.about-text-container p {
+  width: 90%;
 }
 
 .about-image-container .box-shadow {
   -webkit-box-shadow: -15px 14px 0px 1px #f8fb05;
   box-shadow: -15px 14px 0px 1px #f8fb05;
+}
+
+.feature-photo {
+  width: 20%;
+  margin-left: 10px;
 }
 
 .about-flex-container {
@@ -708,15 +747,15 @@ header.contact h1 {
 .comment-form .top-form input {
   background-color: #e0fddf;
 }
-.comment-form .top-form textarea {
-  background-color: #e0fddf;
-}
 .comment-form button {
   background-color: #065635;
   border: none;
   width: 100%;
   margin-top: 40px;
   text-transform: uppercase;
+}
+.comment-form textarea {
+  background-color: #e0fddf;
 }
 
 .blog-footer {
@@ -755,6 +794,9 @@ header.contact h1 {
   color: #065635;
   padding: 15% 0 0 0;
 }
+.contact-info ul li {
+  margin: 10px;
+}
 .contact-info .address p {
   margin: 0;
 }
@@ -790,20 +832,40 @@ footer p {
   text-align: center;
 }
 
-@media (max-width: 1600px) {
+@media (max-width: 1700px) {
   .groups-and-locations .flex-container {
     padding-bottom: 150px;
   }
 }
 @media (max-width: 1200px) {
+  .about-text-container {
+    width: 100%;
+  }
+  .feature-photo {
+    width: 100%;
+    text-align: center;
+  }
   .comments {
     width: 90%;
   }
 }
-@media (max-width: 850px) {
+@media (max-width: 950px) {
   /* all of our styles for TABLET devices will go within this breakpoint */
   .header-image-container {
     position: static;
+  }
+  .nav-bar ul {
+    display: none;
+  }
+  .nav-bar h1 {
+    margin: 0;
+    padding-top: 20px;
+  }
+  .hamburger-flex-container {
+    position: static;
+  }
+  .hamburger-flex-container .hamburger-menu {
+    display: block;
   }
   .features .wrapper {
     -webkit-box-orient: vertical;
@@ -978,6 +1040,9 @@ h3 {
   }
   .contact-top input {
     width: 100%;
+  }
+  .contact-info ul li {
+    font-size: 20px;
   }
   footer {
     margin-top: 100px;

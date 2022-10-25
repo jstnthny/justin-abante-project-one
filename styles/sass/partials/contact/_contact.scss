@@ -26,6 +26,9 @@
     display: flex;
     color: variables.$everGreen;
     padding: 15% 0 0 0;
+    li {
+      margin: 10px;
+    }
   }
   .address {
     p {
