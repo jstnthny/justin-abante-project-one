@@ -361,6 +361,11 @@ textarea::placeholder {
   display: none;
 }
 
+a {
+  color: #151514;
+  text-decoration: none;
+}
+
 html {
   font-size: 125%;
 }
