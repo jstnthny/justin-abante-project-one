@@ -42,7 +42,7 @@
     width: 100%;
   }
 
-  .nav-list.show {
+  .show {
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -223,7 +223,11 @@
   }
 
   ul {
-    font-size: 0.6rem;
+    font-size: 0.8rem;
+    padding-left: 0;
+    li {
+      margin: 0;
+    }
   }
 
   h2,
